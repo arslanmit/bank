@@ -273,6 +273,14 @@ public class BankaSistemi extends JFrame implements ActionListener,ItemListener{
                 pcek.show();
             }
         }
+        else if(obj == kayit_sil){
+          boolean b=altSayfaAc("Hesap Sil");
+          if(b == false){
+              HesapSil delHesap=new HesapSil();
+              desktop.add(delHesap);
+              delHesap.show();
+          }
+        }
 }
 
 
